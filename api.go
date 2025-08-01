@@ -6,7 +6,6 @@ package modbus
 
 type Client interface {
 	// Bit access
-
 	// ReadCoils reads from 1 to 2000 contiguous status of coils in a
 	// remote device and returns coil status.
 	ReadCoils(address, quantity uint16) (results []byte, err error)
